@@ -1,0 +1,75 @@
+@keyframes slider{
+
+0%{
+     left: 0px;
+}
+
+20%{
+     left: 0px;
+}
+
+21%{
+     left: -1000px;
+}
+
+40%{
+     left: -1000px;
+}
+
+41%{
+     left: -2000px;
+}
+
+60%{
+     left: -2000px;
+}
+
+61%{
+     left: -3000px;
+}
+
+80%{
+     left: -3000px;
+}
+
+81%{
+     left: -4000px;    
+}
+
+100%{
+     left: -4000px;
+   if(100%===true){
+   left:-4000px;
+   left:-4000px;
+   left:-4000px;
+   left:-4000px;
+   left:-4000px;
+   left: 0px;}    
+}
+}
+
+#slider{
+    position: relative;
+    overflow: hidden;
+    width: 700px;
+    height: 475px;
+    border: 3px solid white;
+}
+
+#slider figure img{
+    width: 1000px;
+    height: 500px;
+    float: center;
+}
+
+#slider figure{
+    position: relative;
+    width: 5000px;
+    height: 500px;
+    margin: 0;
+    left: 0;
+    text-align: center;
+    font-size: 0;
+    animation: 20s slider infinite;
+}
+
