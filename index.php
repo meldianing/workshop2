@@ -1,30 +1,57 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>workshop2</title>
+	<title></title>
+	<link rel="icon" type="image/jpg" href="GF/img/01.jpg">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script type="text/javascript" src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" scr="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<div class = "mainBase">
-	<div class = "centerDiv">
-		<!--Second Layer | Pager-->
-		<div class = "headerDiv">
-			<table>
-				<tr>
-					<td><img style="position: relative; top: 0px;margin: 0px;padding: 0px;" src="img/2.jpg" width="100px" height="90px"></td>
-				</tr>
-			</table>
-		</div>
+<div class="mainBase">
+	<!--Second Layer | Pager-->
+	<div class="headerDiv">
+		<table>
+			<tr>
+				<label class="titlePage"> Netwoking </label>
+				<br>
+			</tr>
+		</table>
+	</div>
 		<!--Menu Item and Search Bar-->
 		<div class = "menuItem">
-			<a style="float:left;"; class = "linker" href="php/About.php" id = "about">Cisco Paketracer</a>
-			<a style="float:left;"; class = "linker1" href="php/cabling.php" id = "profile">about</a>
-			<a style="float:left;"; class = "linker2" href="php/fiber.php" id = "contact" href="">network cabbles</a>
-			<a style="float:left;"; class = "linker3" href="php/packet.php" id = "signup" href="">network tools</a>
-		</div>
+			<a class = "linker" href="php/home.php" id = "home">Home</a>
+			<a class = "linker" href="php/AboutUs.php" id = "AboutUs" href="">About Us</a>
+			<a class = "linker" href="php/packet.php" id = "pack" >PACKET TRACER</a>
+			<a class = "linker" href="php/des.php" id = "Destinations">NETWOKING TOOLS</a>
 		
-	</div>
-	<img src="img/1.jpg" width="100%" height="100%">
-	<!--Login Base-->
+		</div>	
+</div>
+	<img class = "x" src="img/02.jpg" width="105%" height="100%">
+<img class = "x" src="img/3.jpg" width="105%" height="100%">
+<img class = "x" src="img/4.jpg" width="105%" height="100%">
+</html>
+<script type="text/javascript">
+var myIndex = 0;
+pageslide();
+function pageslide()
+{
+var i;
+var w = document.getElementsByClassName("x");
+for (i = 0; i < w.length; i++)
+{
+w[i].style.display = "none";
+}
+myIndex++;
+if (myIndex > w.length)
+{
+myIndex = 1
+}
+w[myIndex-1].style.display = "block";
+setTimeout(pageslide,1000);
+}
+</script>
+
+</div>
+<img id = "img" src="img/01.jpg" width="100%" height="40%">
+</body>
+</html>
